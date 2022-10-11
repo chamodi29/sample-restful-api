@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "0cd8268c-6691-4eef-b86a-8ddddedbf139",
+		"name": "Student Result API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14132047"
+	},
+	"item": [
+		{
+			"name": "STUDENT",
+			"item": [
+				{
+					"name": "Get students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9060/students/get/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9060",
+							"path": [
+								"students",
+								"get",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get student by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9060/students/get/63452c0b3376d588987bcc5c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9060",
+							"path": [
+								"students",
+								"get",
+								"63452c0b3376d588987bcc5c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Edi Jobs\",\r\n    \"stream\": \"Maths\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9060/students/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9060",
+							"path": [
+								"students",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update student",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"stream\": \"Arts\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9060/students/update/63452d787bfa6dfa424501b3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9060",
+							"path": [
+								"students",
+								"update",
+								"63452d787bfa6dfa424501b3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete student",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9060/students/delete/63455012c2db31a60ff95fa5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9060",
+							"path": [
+								"students",
+								"delete",
+								"63455012c2db31a60ff95fa5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SUBJECT",
+			"item": [
+				{
+					"name": "Get subjects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9060/subjects/get/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9060",
+							"path": [
+								"subjects",
+								"get",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get subject by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9060/subjects/get/63455325ef2d38018416a859",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9060",
+							"path": [
+								"subjects",
+								"get",
+								"63455325ef2d38018416a859"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add subject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subName\": \"Dancing\",\r\n    \"stream\": \"Arts\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9060/subjects/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9060",
+							"path": [
+								"subjects",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update subject",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subName\": \"Western Music\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9060/subjects/update/63455389ef2d38018416a865",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9060",
+							"path": [
+								"subjects",
+								"update",
+								"63455389ef2d38018416a865"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete subject",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9060/subjects/delete/6345536aef2d38018416a862",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9060",
+							"path": [
+								"subjects",
+								"delete",
+								"6345536aef2d38018416a862"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RESULT",
+			"item": []
+		}
+	]
+}
